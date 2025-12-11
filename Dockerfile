@@ -6,5 +6,5 @@ WORKDIR /data
 # Expose n8n port
 EXPOSE 5678
 
-# Start n8n
-CMD ["n8n"]
+# Start n8n with full path
+CMD ["node", "/usr/local/lib/node_modules/n8n/bin/n8n"]
