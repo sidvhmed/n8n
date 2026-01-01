@@ -1,0 +1,24 @@
+{
+  "name": "openkm-importer",
+  "version": "1.0.0",
+  "private": true,
+  "description": "OpenKM document import service with background jobs, retries, and metadata property groups.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node src/index.js",
+    "worker": "node src/worker.js"
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "form-data": "^4.0.1",
+    "helmet": "^7.1.0",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "p-limit": "^6.1.0",
+    "pg": "^8.13.1",
+    "uuid": "^9.0.1"
+  }
+}
